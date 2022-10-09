@@ -100,29 +100,29 @@
 
 ###################################################################################################################
 
-# pierwsza_liczba = int(input("Podaj pierwszą liczbę: "))
-# druga_liczba = int(input("Podaj drugą liczbę: "))
-# operator = input("Podaj rodzaj operacji: ")
-#
-#
-# if operator == "+":
-#     result = pierwsza_liczba + druga_liczba
-# elif operator == "-":
-#     result = pierwsza_liczba - druga_liczba
-# elif operator == "*":
-#     result = pierwsza_liczba * druga_liczba
-# elif operator == "/":
-#     if druga_liczba == 0:
-#         result = "Pamiętaj cholero nie dzielić przez zero!"
-#     else:
-#         result = pierwsza_liczba / druga_liczba
-# elif operator == "**":
-#     result = pierwsza_liczba ** druga_liczba
-# else:
-#     result = "Nieznana operacja"
-# print(result)
+pierwsza_liczba = int(input("Podaj pierwszą liczbę: "))
+druga_liczba = int(input("Podaj drugą liczbę: "))
+operator = input("Podaj rodzaj operacji: ")
 
-# print(f'{pierwsza_liczba} {operator} {druga_liczba}')
+
+if operator == "+":
+    result = pierwsza_liczba + druga_liczba
+elif operator == "-":
+    result = pierwsza_liczba - druga_liczba
+elif operator == "*":
+    result = pierwsza_liczba * druga_liczba
+elif operator == "/":
+    if druga_liczba == 0:
+        result = "Pamiętaj cholero nie dzielić przez zero!"
+    else:
+        result = pierwsza_liczba / druga_liczba
+elif operator == "**":
+    result = pierwsza_liczba ** druga_liczba
+else:
+    result = "Nieznana operacja"
+print(result)
+
+print(f'{pierwsza_liczba} {operator} {druga_liczba}')
 
 
 ###################################################################################################################
