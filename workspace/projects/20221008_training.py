@@ -127,75 +127,31 @@
 
 ###################################################################################################################
 
-lokalizacja_1 = int(input("Wpisz wartość pierwszą, gdzie się znajdujesz? "))
-lokalizacja_2 = int(input("Wpisz wartość drugą, gdzie się znajdujesz? "))
-
-print(lokalizacja_1, lokalizacja_2)
-result = ''
-
-if lokalizacja_1 >= 0 or lokalizacja_1 <=10 and lokalizacja_2 >=0 or lokalizacja_2 <=10:
-    result = "Jesteś w lewym dolnym rogu."
-elif lokalizacja_1 >100 or lokalizacja_1 <0 and  lokalizacja_2 >100 or lokalizacja_1 <0:
-    result = "Jesteś poza planszą"
-elif lokalizacja_1 >= 90 or lokalizacja_1 <=100 and lokalizacja_2 >=0 or lokalizacja_2 <=10:
-    result = "Jesteś w lewym górnym rogu."
-elif lokalizacja_1 >= 90 or lokalizacja_1 <=100 and lokalizacja_2 >=90 or lokalizacja_2 <=100:
-    result = "Jesteś w prawym górnym rogu."
-elif lokalizacja_1 >= 0 or lokalizacja_1 <=10 and lokalizacja_2 >=0 or lokalizacja_2 <=10:
-    result = "Jesteś w prawym dolnym rogu."
-elif lokalizacja_1 >= 10 or lokalizacja_1 <=90 and lokalizacja_2 >=0 or lokalizacja_2 <=10:
-    result = "Jesteś w lewym pasku rogu."
-elif lokalizacja_1 >= 90 or lokalizacja_1 <=100 and lokalizacja_2 >=0 or lokalizacja_2 <=10:
-    result = "Jesteś w prawym górnym rogu."
-elif lokalizacja_1 >= 90 or lokalizacja_1 <=100 and lokalizacja_2 >=0 or lokalizacja_2 <=10:
-     result = "Jesteś w prawym górnym rogu."
-else:
-    result = "Jesteś w centrum"
-
-
-
-
-print(result)
-
-
-
-# dp >= 0.0 and dp >= 10.10
-# dl =
+# lokalizacja_1 = int(input("Wpisz wartość pierwszą, gdzie się znajdujesz? "))
+# lokalizacja_2 = int(input("Wpisz wartość drugą, gdzie się znajdujesz? "))
 #
-# gl =
-# gp =
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# print(lokalizacja_1, lokalizacja_2)
+# result = ''
+#
+# if lokalizacja_1 >= 0 or lokalizacja_1 <=10 and lokalizacja_2 >=0 or lokalizacja_2 <=10:
+#     result = "Jesteś w lewym dolnym rogu."
+# elif lokalizacja_1 >100 or lokalizacja_1 <0 and  lokalizacja_2 >100 or lokalizacja_1 <0:
+#     result = "Jesteś poza planszą"
+# elif lokalizacja_1 >= 90 or lokalizacja_1 <=100 and lokalizacja_2 >=0 or lokalizacja_2 <=10:
+#     result = "Jesteś w lewym górnym rogu."
+# elif lokalizacja_1 >= 90 or lokalizacja_1 <=100 and lokalizacja_2 >=90 or lokalizacja_2 <=100:
+#     result = "Jesteś w prawym górnym rogu."
+# elif lokalizacja_1 >= 0 or lokalizacja_1 <=10 and lokalizacja_2 >=0 or lokalizacja_2 <=10:
+#     result = "Jesteś w prawym dolnym rogu."
+# elif lokalizacja_1 >= 10 or lokalizacja_1 <=90 and lokalizacja_2 >=0 or lokalizacja_2 <=10:
+#     result = "Jesteś w lewym pasku rogu."
+# elif lokalizacja_1 >= 90 or lokalizacja_1 <=100 and lokalizacja_2 >=0 or lokalizacja_2 <=10:
+#     result = "Jesteś w prawym górnym rogu."
+# # elif lokalizacja_1 >= 90 or lokalizacja_1 <=100 and lokalizacja_2 >=0 or lokalizacja_2 <=10:
+# #      result = "Jesteś w prawym górnym rogu."
+# # TBD
+# else:
+#     result = "Jesteś w centrum"
+#
+#
+# print(result)
