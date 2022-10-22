@@ -166,7 +166,6 @@
 ###############################################################################
 
 
-
 """
 Napisz program wyliczający kwotę należną za zakupiony towar na
 podstawie podanej przez użytkownika wagi i nazwy produktu. Do
@@ -227,7 +226,6 @@ ver. dalsze.
 #
 
 
-
 ###############################################################################
 ###############################################################################
 
@@ -243,7 +241,6 @@ ver. dalsze.
 # print(A - B)   # {1, 2, 5}
 # print(A - B)   # {1, 2, 5}
 # print(A ^ B)   # {1, 2, 5, 6, 7, 9}
-
 
 
 ###############################################################################
@@ -298,6 +295,8 @@ Napisz program, który posortuje liczby w liście
 przy wykorzystaniu algorytmu
 "Sortowanie przez wybieranie"
 """
+
+
 # lista = [9, 1, 6, 8, 4, 3, 2, 0]
 # # assert lista == [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 # lista.sort(reverse=False)
@@ -357,23 +356,105 @@ przy wykorzystaniu algorytmu
 
 #### -ver 3-
 
-lista = [9, 1, 6, 8, 4, 3, 2, 0]
-print(lista)
-
-for i_podstawienia in range(len(lista)):
-    i_min_wartosci = i_podstawienia
-    for i_ogona in range(i_podstawienia+1, len(lista)):
-        if lista[i_ogona] < lista[i_min_wartosci]:
-            i_min_wartosci = i_ogona
-
-    # temp = lista[i_min_wartosci]
-    # lista[i_min_wartosci] = lista[i_podstawienia]
-    # lista[i_podstawienia] = temp
-
-    # albo
-
-    lista[i_min_wartosci], lista[i_podstawienia] = lista[i_podstawienia], lista[i_min_wartosci]
-print(lista)
+# lista = [9, 1, 6, 8, 4, 3, 2, 0]
+# # print(lista)
+#
+#
+# def sortowanie_przez_wybieranie(lista):
+#     for i_podstawienia in range(len(lista)):
+#         i_min_wartosci = i_podstawienia
+#         for i_ogona in range(i_podstawienia+1, len(lista)):
+#             if lista[i_ogona] < lista[i_min_wartosci]:
+#                 i_min_wartosci = i_ogona
+#
+#         # temp = lista[i_min_wartosci]
+#         # lista[i_min_wartosci] = lista[i_podstawienia]
+#         # lista[i_podstawienia] = temp
+#
+#         # albo
+#
+#         lista[i_min_wartosci], lista[i_podstawienia] = lista[i_podstawienia], lista[i_min_wartosci]
+#     return lista
+# # print(lista)  # [9, 1, 6, 8, 4, 3, 2, 0]
+#
+# sortowanie_przez_wybieranie(lista)   # [9, 1, 6, 8, 4, 3, 2, 0]  #  to be corrected
 
 ###############################################################################
 ###############################################################################
+
+# funkcje
+# def funkcja1(arg):
+#     print('a', arg)
+#
+#
+# def funkcja2(a: int, b: int, c: int) -> int:
+#     # return a+b+c
+#     print(a + b + c)
+#
+#
+# funkcja2(3, 6, 5, )
+# print(funkcja2.__annotations__)  #  {'a': <class 'int'>, 'b': <class 'int'>, 'c': <class 'int'>, 'return': <class 'int'>}
+
+###############################################################################
+###############################################################################
+
+
+### -versja 1-
+# def czy_pierwsza(arg:int):
+#     if arg == 2:
+#         return True
+#     if arg % 2 == 0 or arg <= 1:
+#         return False
+#
+#     pierwiastek = int(arg**0.5)+1
+#     for dzielnik in range(3, pierwiastek, 2):
+#         if arg % dzielnik ==0:
+#             return False
+#     return True
+### -versja 1---------------end
+
+### -versja 2-
+# def czy_pierwsza(arg):
+#     for dzielnik in range(2,arg):
+#         if arg % dzielnik ==0 or arg ==1 :
+#             return False
+#     return True
+# ### -versja 2---------------end
+#
+# ## testy
+# assert czy_pierwsza(10) is False
+# assert czy_pierwsza(2) is True
+# assert czy_pierwsza(3) is True
+# assert czy_pierwsza(4) is False
+# assert czy_pierwsza(1) is True
+#
+# print(czy_pierwsza(10))
+# print(czy_pierwsza(2))
+# print(czy_pierwsza(3))
+# print(czy_pierwsza(4))
+# print(czy_pierwsza(1))
+
+###############################################################################
+##############################################################################
+
+# import math
+#
+# def is_prime_nr(liczba):
+#     if liczba <2: # mniejsza od 2 nie będzie pierwsza
+#         return False
+#     i =2
+#     while i <= math.sqrt(n):
+#         if liczba % i == 0:
+#             return False
+#         i+= 1
+#     return True
+# podana_liczba = int(input('podaj liczbę'))
+#
+# if is_prime_nr(podana_liczba):
+#     print('tak')
+# else:
+#     print('nie')
+
+###############################################################################
+##############################################################################
+
