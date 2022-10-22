@@ -1,4 +1,7 @@
+import random
 
+print(__debug__)
+print(__name__)
 DEBUG = True
 
 gracz_x = 5
