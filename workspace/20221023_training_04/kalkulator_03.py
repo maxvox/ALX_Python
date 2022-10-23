@@ -15,20 +15,18 @@ def get_data() -> tuple[str, int, int]:
     return operacja, a, b
 
 
-def add(a: int, b: int) -> int:
-    return a + b
+def add(a:int, b:int) -> int:
+    return a+b
 
+def sub(a:int, b:int) -> int:
+    return a-b
 
-def sub(a: int, b: int) -> int:
-    return a - b
+def mul(a:int, b:int) -> int:
+    return a*b
 
+def div(a:int, b:int) -> int:
+    return a/b
 
-def mul(a: int, b: int) -> int:
-    return a * b
-
-
-def div(a: int, b: int) -> int:
-    return a / b
 
 
 def kalkulator(operacja, a: int, b: int) -> int:
@@ -48,4 +46,4 @@ def kalkulator(operacja, a: int, b: int) -> int:
 
 
 # kalkulator('2', 3, 6)
-kalkulator()
+kalkulator(get_data())
