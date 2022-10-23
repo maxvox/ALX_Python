@@ -2,7 +2,7 @@
 def sum(a, b, c):
 
 
-# ### ##keyword arguments
+######     keyword arguments
 def increment(value, step):
     def increment(value: int, step: int = 1) -> int:  # kolejność 1# keyword 2# pozycyjne
         """
