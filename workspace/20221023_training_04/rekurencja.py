@@ -30,14 +30,28 @@
 
 
 def silnia(n):
-    if n <= 0:
+    if n < 0:
         raise ValueError('n musi być większe od 0')
-    if n == 20:
+    if n == 0:
         return 1
     return n * silnia(n - 1)
 
 
-silnia(500)
+# print(silnia(-5))  # ValueError: n musi być większe od 0
+# print(silnia(-500), '\n')  #  ValueError: n musi być większe od 0
+print(silnia(203), '-->> 203\n')
+print(silnia(20), '-->> 20\n')
+print(silnia(0), '-->> 0\n')
+print(silnia(1), '-->> 1\n')
+print(silnia(2), '-->> 2\n')
+print(silnia(3), '-->> 3\n')
+print(silnia(4), '-->> 4\n')
+print(silnia(5), '-->> 5\n')
+print(silnia(6), '-->> 6\n')
+print(silnia(7), '-->> 7\n')
+print(silnia(8), '-->> 8\n')
+print(silnia(9), '-->> 9\n')
+
 #############################################################################
 #############################################################################
 #############################################################################
