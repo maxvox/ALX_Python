@@ -1,4 +1,4 @@
-###positional arguments
+# ##positional arguments
 # def sum(a, b, c):
 #     pass
 
@@ -28,16 +28,17 @@
 
 #### -Napisz testy  -> doctest-
 
-#  postać:   """Docstring"""
-# ## Notatka
-# utwórz nazwę funkcji 'sygnatura funkcji' > enter > zacznij pisać docstring """ (pierwsze trzy cudzysłowy),
-# samo się uzupełni do sześciu, stojąc pomiędzy 3 a 3 naciśnij enter -> samo się wszystko uzupełni na postać:
-# """
-#
-# :param value:
-# :param step:
-# :return:
-# """
+##  postać:   """Docstring"""
+## Notatka
+## utwórz nazwę funkcji 'sygnatura funkcji' > enter > zacznij pisać docstring """ (pierwsze trzy cudzysłowy),
+# A docstring.
+## samo się uzupełni do sześciu, stojąc pomiędzy 3 a 3 naciśnij enter -> samo się wszystko uzupełni na postać:
+"""
+
+:param value:
+:param step:
+:return:
+"""
 
 
 #############################################################################
@@ -49,7 +50,7 @@ napisz funkcję (a może funkcje) która zwróci max z trzech liczb
 """
 
 
-##>>>>>>>>>>>>>>>>>>>>>   TBD
+# #>>>>>>>>>>>>>>>>>>>>>   TBD
 
 # from typing import Tuple
 #
@@ -80,18 +81,21 @@ def max_of_three2(a: float, b: float, c: float) -> float:
         wynik = c
     return wynik
 
+
 #############################################################################
 #############################################################################
 #############################################################################
 
 
 def max_of_two(a, b):
-    if a >b:
+    if a > b:
         return a
     return b
 
+
 def max_of_three(a, b, c):
-    return max_of_two(a,max_of_two(b, c))
+    return max_of_two(a, max_of_two(b, c))
+
 
 if __name__ == "__main__":
     assert max_of_three(1, 3, 2) == 3
@@ -100,19 +104,3 @@ if __name__ == "__main__":
 #############################################################################
 #############################################################################
 #############################################################################
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
