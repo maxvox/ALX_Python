@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ProjectTreeColorHighlighter">
-    <files />
+    <files>
+      <node color="5" path="$PROJECT_DIR$/workspace/20221023_training_04/test_kalkulator.py" />
+      <node color="5" path="$PROJECT_DIR$/workspace/20221023_training_04_homework/test_sum_of_digits.py" />
+    </files>
     <colors>
       <color id="1" value="#4f060d" name="Color 1" enabled="true" />
       <color id="2" value="#44220e" name="Color 2" enabled="true" />

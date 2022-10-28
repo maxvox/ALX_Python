@@ -8,7 +8,7 @@ Wynik to: 5
 """
 if __name__ == '__main__':
 
-    def kalkulator(operacja, liczba1: int, liczba2: int) -> int:
+    def kalkulator(operacja, liczba1: int, liczba2: int) -> tuple:
         operacja = input('Jaką operację chcesz wykonac? [1-dodawanie, 2-odejmowanie, 3-mnożenie, 4-dzielenie]: ')
         liczba1 = int(input('Podaj 1# liczbę: '))
         liczba2 = int(input('Podaj 2# liczbę: '))

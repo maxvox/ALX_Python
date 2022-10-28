@@ -27,11 +27,11 @@ def mul(a: int, b: int) -> int:
     return a * b
 
 
-def div(a: int, b: int) -> int:
+def div(a: int, b: int) -> float:
     return a / b
 
 
-def kalkulator(operacja, a: int, b: int) -> int:
+def kalkulator(operacja, a: int, b: int) -> tuple:
     if operacja == '1':
         wynik = add(a, b)
     elif operacja == '2':
