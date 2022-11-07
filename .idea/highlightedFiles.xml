@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ProjectTreeColorHighlighter">
     <files>
+      <node color="2" path="$PROJECT_DIR$/git_update.sh" />
+      <node color="2" path="$PROJECT_DIR$/run_tests.sh" />
       <node color="5" path="$PROJECT_DIR$/workspace/20221023_training_04/test_kalkulator.py" />
       <node color="5" path="$PROJECT_DIR$/workspace/20221023_training_04_homework/test_sum_of_digits.py" />
+      <node color="1" path="$PROJECT_DIR$/workspace/ALX_20221030_training_06" />
     </files>
     <colors>
       <color id="1" value="#4f060d" name="Color 1" enabled="true" />
